@@ -183,7 +183,110 @@ img {
     padding: 10px;  /* Inside spacing */
     margin-bottom: 15px; /* Space between cards */
 }
+.hero {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.dark-mode-btn {
+    position: fixed; /* Screen per fix karne ke liye */
+    top: 20px; /* Upar space dene ke liye */
+    right: 20px; /* Right side per move karne ke liye */
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    z-index: 1000; /* Ensure button stays on top */
+}
+
+.dark-mode-btn:hover {
+    background-color: #555;
+}
+.hero h1 {
+    font-size: 3rem;  /* Size bada kar diya */
+    font-weight: bold; /* Bold text */
+    letter-spacing: 2px; /* Letters ke darmiyan space */
+    text-transform: uppercase; /* Capital letters */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Light shadow */
+    
+    background: linear-gradient(45deg, #ff7e5f, #feb47b); /* Gradient Text */
+    -webkit-background-clip: text; /* Ensure compatibility */
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.hero p {
+    font-size: 1.2rem; /* Thoda readable aur stylish */
+    font-style: italic;
+    color: #f8f9fa;
+}
+
+/* Navbar Styling */
+.navbar {
+    background: rgba(0, 0, 0, 0.8); /* Slight transparency for modern look */
+    padding: 15px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Light shadow */
+}
+
+/* Navbar brand (logo + text) */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff !important;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between logo and text */
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect on Links */
+.navbar-nav .nav-link:hover {
+    color: #feb47b !important; /* Warm color on hover */
+    text-decoration: underline;
+}
 
 
 
+/* Responsive Menu Button */
+.navbar-toggler {
+    border: none;
+    background-color: #ff7e5f;
+    padding: 8px 10px;
+    border-radius: 5px;
+}
 
+/* Navbar Logo */
+.navbar-brand img {
+    width: 35px;
+    height: auto;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Navbar in dark mode */
+.dark-mode .navbar {
+    background-color: #000;
+}
+
+/* Button color in dark mode */
+.dark-mode #dark-mode-toggle {
+    background-color: white;
+    color: black;
+}
